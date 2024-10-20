@@ -1,0 +1,53 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sumber gambar : https://logopond.com/logos/e7692fb17b1047b75583de12db0ce732.png */
+.logo-icon {
+    height: 40px;
+    width: 40px;
+    background-image: url(../assets/logo.png);
+    background-size: 60px;
+    background-position: center;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+}
+
+nav>a {
+    border: 1px solid;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+nav>a:hover {
+    background-color: #87cefa;
+}
+
+
+/* Sumber Banner : https://img.freepik.com/premium-vector/colorful-banner-with-hands-working-various-electronic-devices-computer-smartphone-tablet-pc-cross-platform-software-program-application-testing-illustration-line-art-style_198278-3230.jpg?w=1380 */
+.photo-banner {
+    height: 250px;
+    background-image: url(../assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.article {
+    height: 300px;
+}
+
+.massage-container {
+    display: flex;
+}
+
+footer>div {
+    text-align: center;
+    font-family: 'Courier New', Courier, inherit;
+    font-size: small;
+}

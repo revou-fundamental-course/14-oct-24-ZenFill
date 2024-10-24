@@ -30,3 +30,34 @@ document.getElementById('messageForm').addEventListener('submit', function (even
   // Update the current time
   displayCurrentTime();
 });
+
+// Photo Slide
+let indexSlide = 0; 
+
+function nextSlide(n) {
+  showSlide(indexSlide += n);
+}
+
+function showSlide(n) {
+  let listImage = document.getElementsByClassName('photo-banner');
+
+  if (n > listImage.length - 1) {
+    indexSlide = 0;
+  }
+
+  if (n < 0) {
+    indexSlide = listImage.length - 1;
+  }
+
+  let index = 0;
+  while (index < listImage.length) {
+    (listImage[index]).style.display = 'none';
+    index++;
+  }
+
+  listImage[indexSlide].style.display = 'block';
+  console.log(listImage);
+  console.log()
+}
+
+setInterval(() => nextSlide(1), 3000);

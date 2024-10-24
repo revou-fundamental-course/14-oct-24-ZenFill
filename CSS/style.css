@@ -2,6 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #d9beb0;
 }
 
 .main-header {
@@ -39,16 +40,42 @@ nav>a:hover {
 }
 
 /* Photo Banner */
-.photo-banner { /* Sumber Banner : https://img.freepik.com/premium-vector/colorful-banner-with-hands-working-various-electronic-devices-computer-smartphone-tablet-pc-cross-platform-software-program-application-testing-illustration-line-art-style_198278-3230.jpg?w=1380 */
-    height: 250px;
-    background-image: url(../assets/banner.jpg);
+.photo-banner { 
+    height: 350px;
     background-size: cover;
     background-position: center;
+}
+
+.photo-1 {
+    background-image: url(../assets/banner01.jpg);
+}
+
+.photo-2 {
+    background-image: url(../assets/banner02.jpg);
+}
+
+.photo-3 {
+    background-image: url(../assets/banner03.jpg);
 }
 
 .article {
     height: 300px;
 }
+
+.photo-profile {
+    background-image: url(..//assets/profil.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-portofolio {
+    background-image: url(../assets/portofolio.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
 
 /* Input Form */
 .message-container {
@@ -78,5 +105,16 @@ footer>div {
 @media only screen and (max-width :600px) {
     .main-header {
         flex-direction: column;
+    }
+
+    .photo-banner,.photo-profile,.photo-portofolio {
+        flex-direction: column;
+        height: 200px;
+        width: auto;
+    }
+
+    .message-container {
+        flex-direction: column;
+        height: 200px;
     }
 }

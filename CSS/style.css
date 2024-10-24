@@ -1,11 +1,17 @@
+/* Ini CSS */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Sumber gambar : https://logopond.com/logos/e7692fb17b1047b75583de12db0ce732.png */
-.logo-icon {
+/* Logo Icon */
+.logo-icon { /* Sumber gambar : https://logopond.com/logos/e7692fb17b1047b75583de12db0ce732.png */
     height: 40px;
     width: 40px;
     background-image: url(../assets/logo.png);
@@ -14,6 +20,7 @@
     border-radius: 50%;
 }
 
+/* Navigasi */
 nav {
     display: flex;
 }
@@ -23,15 +30,16 @@ nav>a {
     padding: 8px;
     text-decoration: none;
     color: black;
+    border-radius: 15px;
+    margin: 2px;
 }
 
 nav>a:hover {
-    background-color: #87cefa;
+    background-color: #dddee0;
 }
 
-
-/* Sumber Banner : https://img.freepik.com/premium-vector/colorful-banner-with-hands-working-various-electronic-devices-computer-smartphone-tablet-pc-cross-platform-software-program-application-testing-illustration-line-art-style_198278-3230.jpg?w=1380 */
-.photo-banner {
+/* Photo Banner */
+.photo-banner { /* Sumber Banner : https://img.freepik.com/premium-vector/colorful-banner-with-hands-working-various-electronic-devices-computer-smartphone-tablet-pc-cross-platform-software-program-application-testing-illustration-line-art-style_198278-3230.jpg?w=1380 */
     height: 250px;
     background-image: url(../assets/banner.jpg);
     background-size: cover;
@@ -42,12 +50,33 @@ nav>a:hover {
     height: 300px;
 }
 
-.massage-container {
+/* Input Form */
+.message-container {
     display: flex;
+    height: 400px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+/* Ouput Form */
+.output-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 45%;
+    margin: 10px;
+    height: 300px;
 }
 
 footer>div {
-    text-align: center;
+    text-align: right;
     font-family: 'Courier New', Courier, inherit;
     font-size: small;
+}
+
+/* Pengaturan Responsif */
+@media only screen and (max-width :600px) {
+    .main-header {
+        flex-direction: column;
+    }
 }

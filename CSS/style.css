@@ -12,7 +12,8 @@ body {
 }
 
 /* Logo Icon */
-.logo-icon { /* Sumber gambar : https://logopond.com/logos/e7692fb17b1047b75583de12db0ce732.png */
+.logo-icon {
+    /* Sumber gambar : https://logopond.com/logos/e7692fb17b1047b75583de12db0ce732.png */
     height: 40px;
     width: 40px;
     background-image: url(../assets/logo.png);
@@ -40,7 +41,7 @@ nav>a:hover {
 }
 
 /* Photo Banner */
-.photo-banner { 
+.photo-banner {
     height: 350px;
     background-size: cover;
     background-position: center;
@@ -80,7 +81,7 @@ nav>a:hover {
 /* Input Form */
 .message-container {
     display: flex;
-    height: 400px;
+    height: 500px;
     align-items: flex-start;
     justify-content: space-between;
     margin: 0px;
@@ -107,7 +108,9 @@ footer>div {
         flex-direction: column;
     }
 
-    .photo-banner,.photo-profile,.photo-portofolio {
+    .photo-banner,
+    .photo-profile,
+    .photo-portofolio {
         flex-direction: column;
         height: 200px;
         width: auto;

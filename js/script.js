@@ -32,7 +32,7 @@ document.getElementById('messageForm').addEventListener('submit', function (even
 });
 
 // Photo Slide
-let indexSlide = 0; 
+let indexSlide = 0;
 
 function nextSlide(n) {
   showSlide(indexSlide += n);
